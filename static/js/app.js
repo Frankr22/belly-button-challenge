@@ -1,7 +1,6 @@
 // Step 1: Read in the JSON data and parse it
-const data1 = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json";
-
-d3.json(data1).then(function(data) {
+const data = "https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-classroom/v1.1/14-Interactive-Web-Visualizations/02-Homework/samples.json";
+d3.json(data).then(function(data) {
   // Step 2: Create an array of objects, where each object represents an OTU
   var otus = data.samples.map(function(sample) {
     return {
