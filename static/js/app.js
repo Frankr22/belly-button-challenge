@@ -57,11 +57,11 @@ function buildChart(id) {
     // clear any existing metadata
     sampleMetadata.html("");
 
-  // loop over the properties of the filtered metadata object and append a new element for each key-value pair
-  Object.entries(filtered_metadata[0]).forEach(([key, value]) => {
-    var newElement = sampleMetadata.append("div");
-    newElement.html(`<strong>${key}:</strong> ${value}`);
-  });
+    // loop over the properties of the filtered metadata object and append a new element for each key-value pair
+    Object.entries(filtered_metadata[0]).forEach(([key, value]) => {
+      var newElement = sampleMetadata.append("div");
+      newElement.html(`<strong>${key}:</strong> ${value}`);
+    });
 
 })};
 
